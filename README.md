@@ -18,7 +18,7 @@ The `socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)` function reserves a socket and e
 ## Q4) For gettftp : build a properly formed Read Request (RRQ) and send it to the server, receive a file consisting of a single Data (DAT) packet and its acknowledgment (ACK), receive a file consisting of multiple Data (DAT) packets and their respective acknowledgments (ACK)
 For an RRQ (Read Request) request, we want to send a message in the following format:
 
-image RRQ/WRQ packet
+![RRQ/WRQ packet](RRQ_WRQ_packet.png)
 
 The OpCode is set to 1 to send a read request and 2 for a write request (relevant for puttftp).
 The Mode is set to netascii in our case. Alternatively, it can be set to octet, for example, indicating the transfer mode.
