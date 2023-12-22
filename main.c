@@ -36,7 +36,7 @@ int main(int argc,char* argv[]){
 
     printf("After socket\n");
 
-    // connect(sockfd,res->ai_addr,res->ai_addrlen);
+    connect(sockfd,res->ai_addr,res->ai_addrlen);
     char msg[256];
     msg[0]='\1'; //Read mode
     //msg[1]='\1';
